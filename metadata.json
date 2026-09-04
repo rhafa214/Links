@@ -1,0 +1,6 @@
+{
+  "name": "Missão Sedentos | Links Oficiais",
+  "description": "Acesse o site oficial, músicas, lançamentos e novidades da Missão Sedentos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-oswald: 'Oswald', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    /* Institutional Palette */
+    --color-black-deep: #070707;
+    --color-black-soft: #111111;
+    --color-graphite: #1A1A1A;
+    --color-gold: #C9A85C;
+    --color-gold-bright: #D9BB72;
+    --color-gold-muted: #8F7540;
+    --color-off-white: #F2EEE5;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #070707;
+    color: #F2EEE5;
+    min-height: 100vh;
+  }
+}
+
+.font-oswald {
+  font-family: var(--font-oswald);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Institutional Deep Black & Subtle Gold Illumination Texture */
+.bg-institutional {
+  background-color: #070707;
+  background-image: 
+    radial-gradient(ellipse 80% 45% at 50% 0%, rgba(201, 168, 92, 0.08), transparent 65%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, rgba(26, 26, 26, 0.8), transparent 70%),
+    linear-gradient(180deg, #070707 0%, #0D0D0D 50%, #070707 100%);
+}
+
+
