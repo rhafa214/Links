@@ -21,6 +21,7 @@ export interface LinkItem {
   icon: IconType;
   enabled: boolean;
   featured: boolean;
+  visibleFrom?: string;
 }
 
 export interface LinkConfig {
@@ -41,20 +42,21 @@ export const linkConfig: LinkConfig = {
 
   links: [
     {
+      id: "pre-save",
+      label: "Faça o pré-save de Quebranta-me",
+      url: "https://offstep.link/726235452427",
+      icon: "music",
+      enabled: true,
+      featured: true,
+      visibleFrom: "2026-09-09T18:00:00-03:00",
+    },
+    {
       id: "official-site",
       label: "Conheça nosso site oficial",
       url: "https://missaosedentos.vercel.app/",
       icon: "website",
       enabled: true,
       featured: false,
-    },
-    {
-      id: "pre-save",
-      label: "Faça o pré-save de Quebranta-me",
-      url: "",
-      icon: "music",
-      enabled: false,
-      featured: true,
     },
     {
       id: "spotify",
