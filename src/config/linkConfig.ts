@@ -12,6 +12,7 @@ export type IconType =
   | "youtube"
   | "apple-music"
   | "shirt"
+  | "whatsapp"
   | string;
 
 export interface LinkItem {
@@ -43,7 +44,7 @@ export const linkConfig: LinkConfig = {
   links: [
     {
       id: "pre-save",
-      label: "Faça o pré-save de Quebranta-me",
+      label: "Ouça quebranta-me na sua plataforma preferida",
       url: "https://offstep.link/726235452427",
       icon: "music",
       enabled: true,
@@ -55,6 +56,14 @@ export const linkConfig: LinkConfig = {
       label: "Conheça nosso site oficial",
       url: "https://missaosedentos.vercel.app/",
       icon: "website",
+      enabled: true,
+      featured: false,
+    },
+    {
+      id: "whatsapp",
+      label: "Grupo oficial no WhatsApp",
+      url: "https://chat.whatsapp.com/GXYSHjogv4Z9w7wipP7WUg?s=hd&p=i&mlu=4&ilr=4",
+      icon: "whatsapp",
       enabled: true,
       featured: false,
     },
